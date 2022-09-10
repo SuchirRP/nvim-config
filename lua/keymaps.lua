@@ -19,7 +19,7 @@ map("n", "<C-y>", ":UndotreeFocus<CR>")
 
 --terminal
 map("n", "term", ":terminal<cr>")           --opens terminal    -- Ctrl-\ + Ctrl-n to enter command mode from terminal tab
-map("n", "n", ":nohlsearch<cr>")
+map("n", "no", ":nohlsearch<cr>")
 
 
 --lspconfig keybindings

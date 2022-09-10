@@ -20,7 +20,6 @@ return require('packer').startup(function(use)
 
     --custom stausline and buffer
     use {"nvim-lualine/lualine.nvim"}               --status line
-    use {"akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons"}    --buffer tabline
 
     --file explorer
     use {"kyazdani42/nvim-tree.lua", requires = {"kyazdani42/nvim-web-devicons"}}

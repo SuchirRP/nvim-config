@@ -76,11 +76,6 @@ _G.packer_plugins = {
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/cmp-buffer",
