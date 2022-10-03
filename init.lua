@@ -15,7 +15,6 @@ require("setup/nvim-ts-rainbow")
 require("setup/nvim-retrail")
 require("setup/vim-illuminate")
 --tabbuffer and statusline
-require("setup/lualine")
 --lsp plugins
 require("setup/fidget")
 require("setup/nvim-lspconfig")

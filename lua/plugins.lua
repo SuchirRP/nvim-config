@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
     use {"kyazdani42/nvim-web-devicons"}            --enables use of icons by nerdtree, etc
 
     --custom stausline and buffer
-    use {"nvim-lualine/lualine.nvim"}               --status line
 
     --file explorer
     use {"kyazdani42/nvim-tree.lua", requires = {"kyazdani42/nvim-web-devicons"}}
