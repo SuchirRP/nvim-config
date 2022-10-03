@@ -5,7 +5,6 @@ require("plugins")
 --plugin config files
 require("setup/startup")
 require("setup/gruvbox")
-require("setup/nvim-transparent")
 require("setup/nvim-web-devicons")
 --file explorer
 require("setup/nvim-tree")

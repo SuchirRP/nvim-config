@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
 
     --themes
     use {"ellisonleao/gruvbox.nvim"}
-    use {"xiyaowong/nvim-transparent"}              --transperent background
 
     --devicons
     use {"kyazdani42/nvim-web-devicons"}            --enables use of icons by nerdtree, etc
