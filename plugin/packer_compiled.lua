@@ -116,15 +116,15 @@ _G.packer_plugins = {
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["kat.nvim"] = {
+    loaded = true,
+    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/kat.nvim",
+    url = "https://github.com/katawful/kat.nvim"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -155,11 +155,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/nvim-retrail",
     url = "https://github.com/zakharykaplan/nvim-retrail"
-  },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
