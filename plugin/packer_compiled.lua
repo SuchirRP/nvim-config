@@ -76,6 +76,11 @@ _G.packer_plugins = {
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -115,11 +120,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["kat.nvim"] = {
-    loaded = true,
-    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/kat.nvim",
-    url = "https://github.com/katawful/kat.nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -215,11 +215,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-closer"] = {
-    loaded = true,
-    path = "/home/frzfishcustard/.local/share/nvim/site/pack/packer/start/vim-closer",
-    url = "https://github.com/rstacruz/vim-closer"
   },
   ["vim-endwise"] = {
     loaded = true,

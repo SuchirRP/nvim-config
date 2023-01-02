@@ -38,8 +38,17 @@ require'lspconfig'.intelephense.setup{                          --php
 require'lspconfig'.html.setup{                                  --html
 }
 require'lspconfig'.cssls.setup{                                 --css
+    filetypes = {"html", "css"},
+    root_dir = function() return vim.loop.cwd() end
 }
 require'lspconfig'.tsserver.setup{                              --js/typescript/jsreact/typ
+    filetypes = { "html", "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"},
+    root_dir = function() return vim.loop.cwd() end
+
+}
+require'lspconfig'.vuels.setup {                                -- vue js framework
+    filetypes = { "html", "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescript.tsx", "vue"},
+    root_dir = function() return vim.loop.cwd() end
 }
 require'lspconfig'.vimls.setup{                                 --vim
 }

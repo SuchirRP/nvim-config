@@ -35,8 +35,7 @@ return require('packer').startup(function(use)
 
     use {"RRethy/vim-illuminate"}                   --highlight all usage of variables when under cursor
     use {"tpope/vim-endwise"}                       --and end and the likes to languages like lua, ruby, vimscript, etc that need them automatically
-    use {"rstacruz/vim-closer"}                     --closes brackets on enter
-
+    use {"jiangmiao/auto-pairs"}                    --auto pairs quotes brackets, etc
     --snippets
     use {"SirVer/ultisnips"}                        --snipet engine
     use {"honza/vim-snippets"}                      --snipet library

@@ -8,7 +8,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 --general keybinds
-map("n", "<A-n>", ":tabe<CR>")              --new tab
+map("n", "new", ":tabe<CR>")              --new tab
 map("n", "<A-m>", ":tabn<CR>")              --next tab
 
 --nvim-tree keymaps

@@ -84,10 +84,12 @@ require('lspconfig')['cssls'].setup {                           --css
 require('lspconfig')['tsserver'].setup {                        --js/typescript
     capabilities = capabilities
 }
+require('lspconfig')['vuels'].setup {                           --vue js framework
+    capabilities = capabilities
+}
 require('lspconfig')['intelephense'].setup {                    --php
     capabilities = capabilities
 }
-
 require('lspconfig')['vimls'].setup {                           --vim
     capabilities = capabilities
 }
