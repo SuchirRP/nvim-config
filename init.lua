@@ -80,7 +80,6 @@ require("lazy").setup({
     {'nvim-lualine/lualine.nvim'},                                                                      -- lualine
 
     -- misc
-    {'folke/which-key.nvim'},                       -- shows possible keybinds
     {'nvim-tree/nvim-web-devicons'},                -- devicons
     {'ntpeters/vim-better-whitespace'},             -- trims whtespaces
     {'cohama/lexima.vim'},                          -- autopairs brackets and quotes
