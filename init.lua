@@ -1,4 +1,4 @@
-    -- Editor Settings
+-- Editor Settings
 vim.opt.compatible = false			-- disble vi compatibility
 vim.opt.showmatch = true			-- show matching
 vim.opt.mouse = v				-- middle-click paste
@@ -67,6 +67,9 @@ require("lazy").setup({
         'saadparwaiz1/cmp_luasnip',
         'rafamadriz/friendly-snippets'              -- adds community snippets
     }},
+
+    --tabnine ai autocomplete
+    { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
 
     -- treesitter
     {'nvim-treesitter/nvim-treesitter', dependencies = {                -- syntax highlighting
@@ -172,6 +175,17 @@ local cmp = require'cmp'
     })
   })
 ---
+--- tabnine.nvim ai completion
+require('tabnine').setup({
+    disable_auto_comment=true,
+    accept_keymap="<A-]>",
+    dismiss_keymap = "<A-[]>",
+    debounce_ms = 800,
+    suggestion_color = {gui = "#808080", cterm = 244},
+    exclude_filetypes = {"TelescopePrompt", "NvimTree"},
+    log_file_path = nil, -- absolute path to Tabnine log file
+})
+---
 --- lspconfig
 local lspconfig = require('lspconfig')              -- set up induvidual servers after this point
 require("lspconfig").lua_ls.setup {}                -- lua
@@ -243,10 +257,12 @@ require('lualine').setup {
 -- Keymaps
 ---misc
 vim.keymap.set('n', 'no', ':nohl<CR>', {silent = true })
-
+---spellcheck toggle
+vim.keymap.set('n', 'sp', ':set spell<CR>', {silent = true})
+vim.keymap.set('n', 'nsp', ':set nospell<CR>', {silent = true})
 ---tabs
 vim.keymap.set('n', 'new', ':tabe<CR>', {silent = true })
-vim.keymap.set('n', '<A-m>', ':tabn<CR>', {silent = true })
+vim.keymap.set('n', '<A-tab>', ':tabn<CR>', {silent = true })
 
 ---nvim trouble
 vim.keymap.set('n', '<A-e>', ':TroubleToggle<CR>', {silent = true })
