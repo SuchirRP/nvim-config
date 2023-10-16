@@ -68,9 +68,6 @@ require("lazy").setup({
         'rafamadriz/friendly-snippets'              -- adds community snippets
     }},
 
-    --tabnine ai autocomplete
-    { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
-
     -- treesitter
     {'nvim-treesitter/nvim-treesitter', dependencies = {                -- syntax highlighting
         'nvim-treesitter/nvim-treesitter-textobjects'}},
@@ -86,8 +83,8 @@ require("lazy").setup({
     {'nvim-tree/nvim-web-devicons'},                -- devicons
     {'ntpeters/vim-better-whitespace'},             -- trims whtespaces
     {'cohama/lexima.vim'},                          -- autopairs brackets and quotes
-    {'kaarmu/typst.vim'}                            -- typst plugin
-
+    {'kaarmu/typst.vim'},                           -- typst plugin
+    {'dccsillag/magma-nvim'}                        -- Jupyter notebooks in nvim
 })
 
 -- configs
@@ -175,17 +172,6 @@ local cmp = require'cmp'
     })
   })
 ---
---- tabnine.nvim ai completion
-require('tabnine').setup({
-    disable_auto_comment=true,
-    accept_keymap="<A-]>",
-    dismiss_keymap = "<A-[]>",
-    debounce_ms = 800,
-    suggestion_color = {gui = "#808080", cterm = 244},
-    exclude_filetypes = {"TelescopePrompt", "NvimTree"},
-    log_file_path = nil, -- absolute path to Tabnine log file
-})
----
 --- lspconfig
 local lspconfig = require('lspconfig')              -- set up induvidual servers after this point
 require("lspconfig").lua_ls.setup {}                -- lua
@@ -262,7 +248,7 @@ vim.keymap.set('n', 'sp', ':set spell<CR>', {silent = true})
 vim.keymap.set('n', 'nsp', ':set nospell<CR>', {silent = true})
 ---tabs
 vim.keymap.set('n', 'new', ':tabe<CR>', {silent = true })
-vim.keymap.set('n', '<A-tab>', ':tabn<CR>', {silent = true })
+vim.keymap.set('n', 't', ':tabn<CR>', {silent = true })
 
 ---nvim trouble
 vim.keymap.set('n', '<A-e>', ':TroubleToggle<CR>', {silent = true })
@@ -275,5 +261,5 @@ vim.keymap.set('n', 'fb', builtin.buffers, {})
 vim.keymap.set('n', 'fh', builtin.help_tags, {})
 ---vim-better-whitespace
 vim.keymap.set('n', 'wh', ':ToggleWhitespace<CR>', {silent = true})      --toggle extraneous whitespace highlighting
-vim.keymap.set('n', 'trim', ':StripWhitespace<CR>', {silent = true})        --trim extraneous whitespace highlighting
+vim.keymap.set('n', 'tr', ':StripWhitespace<CR>', {silent = true})        --trim extraneous whitespace highlighting
 --
