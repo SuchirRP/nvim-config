@@ -38,7 +38,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     -- color scheme
     {'catppuccin/nvim'},                            -- catppuccin colorscheme
-    {'folke/tokyonight.nvim'},                       -- tokyonight
+    {'folke/tokyonight.nvim'},                      -- tokyonight
+    {'ellisonleao/gruvbox.nvim'},                   -- gruvbox
 
     -- lsp stuff
     {'neovim/nvim-lspconfig'},                      -- nvim lspconfig
@@ -95,7 +96,8 @@ require("catppuccin").setup({
 require("tokyonight").setup({
   style = "night",
   })
-vim.cmd.colorscheme "tokyonight"
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 ---
 --- lsp stuff
 --- mason
@@ -248,7 +250,7 @@ vim.keymap.set('n', 'sp', ':set spell<CR>', {silent = true})
 vim.keymap.set('n', 'nsp', ':set nospell<CR>', {silent = true})
 ---tabs
 vim.keymap.set('n', 'new', ':tabe<CR>', {silent = true })
-vim.keymap.set('n', 't', ':tabn<CR>', {silent = true })
+vim.keymap.set('n', '<A-tab>', ':tabn<CR>', {silent = true })
 
 ---nvim trouble
 vim.keymap.set('n', '<A-e>', ':TroubleToggle<CR>', {silent = true })
