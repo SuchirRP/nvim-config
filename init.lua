@@ -97,7 +97,7 @@ require("tokyonight").setup({
   style = "night",
   })
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme catppuccin-mocha]])
 ---
 --- lsp stuff
 --- mason
