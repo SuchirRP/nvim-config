@@ -182,8 +182,8 @@ require("lspconfig").bashls.setup {}                -- bash
 require'lspconfig'.jedi_language_server.setup{}     -- python
 require("lspconfig").html.setup {}                  -- html
 require("lspconfig").cssls.setup {}                 -- css
-require("lspconfig").tsserver.setup {}              -- typescript/javascript
-require("lspconfig").typst_lsp.setup {              -- typst
+require("lspconfig").ts_ls.setup {}                 -- typescript/javascript
+require("lspconfig").tinymist.setup {               -- typst
     filetype = {typst}
 }
 require("lspconfig").jdtls.setup {}              -- java
