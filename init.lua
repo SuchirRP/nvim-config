@@ -124,8 +124,8 @@ require("mason-nvim-dap").setup({
 require("mason-lspconfig").setup({
     -- A list of servers to automatically install if they're not already installed
     ensure_installed = {
-        "lua_ls", "clangd", "bashls", "jedi_language_server",
-        "html", "cssls", "tsserver", "jdtls", "tinymist",
+        "lua_ls", "clangd", "charp_ls", "bashls", "jedi_language_server",
+        "html", "cssls", "ts_ls", "jdtls", "tinymist",
     },
     -- This handler function runs for every server that is set up.
     handlers = {
